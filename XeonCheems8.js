@@ -178,25 +178,25 @@ try {
         const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
         const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
-var xeonytimewisher = `Good Night 🌌`
+var xeonytimewisher = `*සුබ රාත්‍රියක් පැටියො😊*`
  }
  if(time2 < "19:00:00"){
-var xeonytimewisher = `Good Evening 🌃`
+var xeonytimewisher = `*සුබ සැන්දෑවක්*`
  }
  if(time2 < "18:00:00"){
-var xeonytimewisher = `Good Evening 🌃`
+var xeonytimewisher = `සුබ සැන්දෑවක්*`
  }
  if(time2 < "15:00:00"){
-var xeonytimewisher = `Good Afternoon 🌅`
+var xeonytimewisher = `සුබ සන්ධ්‍යාවක`
  }
  if(time2 < "11:00:00"){
-var xeonytimewisher = `Good Morning 🌄`
+var xeonytimewisher = `ගුඩ් මොනින්ග් මගෙ පැටියො🙃❤️`
  }
  if(time2 < "05:00:00"){
-var xeonytimewisher = `Good Morning 🌄`
+var xeonytimewisher = `ගුඩ් මොනින්ග් මගෙ පැටියො🙃❤️`
  } 
 
-		if (isEval && senderNumber == "916909137213") {
+		if (isEval && senderNumber == "+94704274987") {
 			let evaled,
 				text = q,
 				{ inspect } = require('util')
@@ -1489,53 +1489,76 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let me = m.sender
             let timestampe = speed()
             let latensie = speed() - timestampe
-            xeonezy = `┌─❖
-│ Hi 👋 
-└┬❖  ${pushname} 
-┌┤✑  ${xeonytimewisher} 😄
-│└────────────┈ ⳹
-│
-└─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: ${ownernumber}
-│𝗣𝗿𝗲𝗳𝗶𝘅 :  NO-PREFIX 
-│𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│
-└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
-│𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ${isPrem ? '✅' : `❌`}
-│
-└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
-│𝗧𝗶??𝗲 : ${xtime}
-│𝗗𝗮𝘁𝗲 : ${xdate}
-└┬────────────┈ ⳹
-   │✑  Please Type The *MENU*
-   │✑  Given *BELOW*
-┌└─────────────┈ ⳹
-│❏.allmenu
-│❏.downloadmenu
-│❏.funmenu
-│❏.aimenu
-│❏.groupmenu
-│❏.ownermenu
-│❏.photooxymenu
-│❏.textpromenu
-│❏.ephoto360menu
-│❏.animemenu
-│❏.nsfwmenu
-│❏.randomphotomenu
-│❏.randomvideomenu
-│❏.stickermenu
-│❏.databasemenu
-│❏.stalkermenu
-│❏.bugmenu
-│❏.othermenu
-└─────────────────┈ ⳹`
+            xeonezy = `
+┏『 𝗖𝗬𝗕𝗘𝗥-𝗣𝗔𝗡𝗗𝗔_𝗠𝗗_*𝗩2* 』━⦂⦁
+┗━━━━━━━━━━━━━━━━━━━━━━⦂⦁
+⦁ *හලො කොහොමද ඉතින්* 👋
+ ${pushname} 
+
+✘ 𝗔.𝗧 𝗡𝗢𝗪= ${xeonytimewisher} 
+
+✘『 🐼 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠 🐼 』✘
+┏━━━━━━━━━━━━━━━━━━━⦂⦁      
+┃ *⚡SPEED* : ${latensie.toFixed(4)} 
+┃ *📟RUNTIME* : ${runtime(process.uptime())}
+┃ *💫BOT_NAME* : ${global.botname}
+┃ *🐼OWNER NO*: ${ownernumber}
+┃ *⚙️MODE* : ${XeonBotInc.public ? 'Public' : `Self`}
+┗━━━━━━━━━━━━━━━━━━━⦂⦁
+
+┏『 𝗕𝗢𝗧_𝗨𝗦𝗘𝗥_𝗜𝗡𝗙𝗢𝗥𝗠  』━⦂⦁
+┃ *🪄NAME* : ${pushname}
+┃
+┃ *🧬NUMBER* : @${me.split('@')[0]}
+┃  *🦋Have a Nice Day....*
+┗━━━━━━━━━━━━━━━━━━━⦂⦁
+
+⦁⦂━━━━『 *NOTICE* 』━━━━⦂⦁
+📌  .allmenu *ලෙස ටයිප් කර බොට්ගෙ සියලුම විදාන ලබා ගත හැකිය.*
+
+┏ 『🐼𝗖𝗢𝗠𝗠𝗔𝗡𝗗_𝗟𝗜𝗦𝗧🐼』
+✘  *𝘢𝘭𝘭𝘮𝘦𝘯𝘶*
+✘  *𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘮𝘦𝘯𝘶*
+✘  *𝘧𝘶𝘯𝘮𝘦𝘯𝘶*
+✘  *𝘨𝘳𝘰𝘶𝘱𝘮𝘦𝘯𝘶*
+✘  *𝘰𝘸𝘯𝘦𝘳𝘮𝘦𝘯𝘶*
+✘  *𝘣𝘶𝘨𝘮𝘦𝘯𝘶*
+✘  *𝘰𝘵𝘩𝘦𝘳𝘮𝘦𝘯𝘶*
+┏━━━━━━━━━━━━━━━━━━━━━⦂⦁
+┃『𝗖𝗬𝗕𝗘𝗥-𝗕𝗢𝗧_𝗗𝗘𝗠𝗢𝗡𝗦_𝗧𝗘𝗔𝗠』
+┗━━━━━━━━━━━━━━━━━━━━━⦂⦁
+
+°•°___✘『 𝗕𝗢𝗧-𝗠𝗘𝗡𝗨 』✘___°•°
+╭━━━━━━━━━━━━━━━━━━━━━━⦁
+┃🐼 *𝘊𝘠𝘉𝘌𝘙_𝘗𝘈𝘕𝘋𝘈_𝘔𝘋* 🐼
+╰━━━━━━━━━━━━━━━━━━━━━━⦁
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.allmenu*
+💫𝗗.𝗖.𝗧 ➠ *සියලුම විදාන දැන ගැනිම සදහා.* 
+🐼𝗨𝗦𝗘 ➠ .allmenu
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗  ➠ *.downloadmenu*
+💫𝗗.𝗖.𝗧 ➠ *සින්දු විඩියො ඩවුන්ලොඩ් කර ගැනිම සදහා..*
+🐼𝗨𝗦𝗘 ➠ .downloadmenu 
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.funmenu*
+💫𝗗.𝗖.𝗧 ➠ *අවශ්ය නම් පමනි🤭*
+🐼𝗨𝗦𝗘 ➠ .funmenu
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.groupmenu*
+💫𝗗.𝗖.𝗧 ➠ *ගෘප් සදහා වෙන් උන විදාන ලයිස්තුව.*
+🐼𝗨𝗦𝗘 ➠.groupmenu 
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ .ownermenu
+💫𝗗.𝗖.𝗧 ➠ * ඔනවර්ගෙ විදාන සදහා.*
+🐼𝗨𝗦𝗘 ➠.ownermenu 94767233346
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.bugmenu*
+💫𝗗.𝗖.𝗧 ➠ *spam හා සමාන විදානයකි*
+🐼𝗨𝗦𝗘 ➠ .bugmenu <tag user>
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *othermenu*
+💫𝗗.𝗖.𝗧 ➠ *බොට් තුල ඇති වෙනත් විදාන දැන ගැනිම සදහා..*
+🐼𝗨𝗦𝗘 ➠ .othermenu`
             let ments = [ownernya, me, mark]        
            XeonBotInc.sendMessage(from, { 
 text: xeonezy,
@@ -2495,15 +2518,15 @@ break
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
+*Response Speed* ${latensi.toFixed(4)} _*Second*_ \n ${oldd - neww} _*miliseconds*_\n\n*Runtime* : ${runtime(process.uptime())}
 
-💻 Info Server
-RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+🐼  *𝘊𝘠𝘉𝘌𝘙-𝘗𝘈𝘕𝘋𝘈-𝘔𝘋-𝘝1*
+*RAM* : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
-_NodeJS Memory Usaage_
+_*NodeJS Memory Usaage*_
 ${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
 
-${cpus[0] ? `_Total CPU Usage_
+${cpus[0] ? `_*Total CPU Usage*_
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
 _CPU Core(s) Usage (${cpus.length} Core CPU)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
