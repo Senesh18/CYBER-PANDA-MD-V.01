@@ -541,14 +541,14 @@ XeonBotInc.sendImageAsSticker(m.chat, pesan, m, { packname: global.packname, aut
 }
 
 const sendvn = (teks) => {
-XeonBotInc.sendMessage(from, { audio: teks, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+XeonBotInc.sendMessage(from, { audio: teks, mimetype: 'audio/mp4',  }, { quoted: m })
 }
 
 //autoreply
 for (let BhosdikaXeon of VoiceNoteXeon) {
 if (budy === BhosdikaXeon) {
 let audiobuffy = fs.readFileSync(`./XeonMedia/audio/${BhosdikaXeon}.mp3`)
-XeonBotInc.sendMessage(m.chat, { audio: audiobuffy, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+XeonBotInc.sendMessage(m.chat, { audio: audiobuffy, mimetype: 'audio/mp4',  }, { quoted: m })     
 }
 }
 for (let BhosdikaXeon of StickerXeon){
@@ -1441,13 +1441,13 @@ Type *surrender* to surrender and admit defeat`
 	case 'public': {
                 if (!XeonTheCreator) return XeonStickOwner()
                 XeonBotInc.public = true
-                replygcxeon('*Successful in Changing To Public Usage*')
+                replygcxeon('*Successful in Changing To Public Usage*                                            *බොට් පබ්ලික් හැමොටම බොට් යුස් කරන්න පුලුවන්*')
             }
             break
             case 'self': {
                 if (!XeonTheCreator) return XeonStickOwner()
                 XeonBotInc.public = false
-                replygcxeon('*Successful in Changing To Self Usage*')
+                replygcxeon('*Successful in Changing To Self Usage*                                                 *බොට් ඔයාට විතරයි යුස් කරන්න පුලුවන්*')
             }
             break
 case 'rentbot': {
@@ -1484,7 +1484,7 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'list': case 'menu': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed()
@@ -1615,6 +1615,28 @@ mentionedJid:[sender],
 "containsAutoReply": true,
 "mediaType": 1, 
 "thumbnail": fs.readFileSync("./XeonMedia/theme/cheemspic.jpg"),
+"mediaUrl": `${wagc}`,
+"sourceUrl": `${wagc}`
+}
+}
+})
+}
+break
+case 'menu': {
+var unicorn = await getBuffer(picak+'menu')
+sendXeonBotIncMessage(from, { 
+text: `🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼
+Hi @${sender.split("@")[0]}\n\n${ownermenu(prefix)}`,
+mentions:[sender],
+contextInfo:{
+mentionedJid:[sender],
+"externalAdReply": {
+"showAdAttribution": true,
+"renderLargerThumbnail": true,
+"title": botname, 
+"containsAutoReply": true,
+"mediaType": 1, 
+"thumbnail": fs.readFileSync("./XeonMedia/audio/panda.mp3"),
 "mediaUrl": `${wagc}`,
 "sourceUrl": `${wagc}`
 }
@@ -2120,7 +2142,7 @@ case 'sound159':
 case 'sound160':
 case 'sound161':
 XeonBotInc_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
-await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4',  }, { quoted: m })     
 break
 case 'friend':
 case 'searchfriend':{
@@ -3378,7 +3400,7 @@ const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4', ,
     contextInfo:{
         externalAdReply:{
             title:anup3k.title,
@@ -3399,7 +3421,7 @@ if (args.length < 1 || !isUrl(text) || !xeonaudp3.isYTUrl(text)) return replygcx
 const audio=await xeonaudp3.mp3(text)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(audio.path),
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4', ,
     contextInfo:{
         externalAdReply:{
             title:audio.meta.title,
@@ -5894,7 +5916,7 @@ exec(`ffmpeg -i ${media} -filter:a volume=${args[0]} ${rname}`, (err, stderr, st
 fs.unlinkSync(media)
 if (err) return replygcxeon('Error!')
 jadie = fs.readFileSync(rname)
-XeonBotInc.sendMessage(from, {audio:jadie, mimetype: 'audio/mp4', ptt: true}, {quoted: m})
+XeonBotInc.sendMessage(from, {audio:jadie, mimetype: 'audio/mp4', }, {quoted: m})
 fs.unlinkSync(rname)
 })
 } else if (isQuotedVideo) {
@@ -6235,7 +6257,7 @@ if (!text) return replygcxeon('Where is the text?')
                     url: xeonrl,
                 },
                 mimetype: 'audio/mp4',
-                ptt: true,
+                ,
                 fileName: `${text}.mp3`,
             }, {
                 quoted: m,
