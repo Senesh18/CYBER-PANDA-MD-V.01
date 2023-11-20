@@ -29,7 +29,7 @@ global.socialm = "GitHub: panda" //ur github or insta name
 global.location = "India, hambanthota, maththala" //ur location
 
 //new
-global.botname = "🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼"
+global.botname = ""
 global.ownernumber = '+94704274987'
 global.ownername = 'sachith'
 global.ownerNumber = ["+94704274987@s.whatsapp.net"]
@@ -40,7 +40,7 @@ global.themeemoji = '🐼'
 global.wm = "Xeon Bot Inc."
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.packname = "Sticker By"
-global.author = "🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼\n\n"
+global.author = ""
 global.creator = "+94704274987@s.whatsapp.net"
 global.prefa = ['','!','.','#','&']
 global.sessionName = 'session'
