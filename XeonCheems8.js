@@ -541,14 +541,14 @@ XeonBotInc.sendImageAsSticker(m.chat, pesan, m, { packname: global.packname, aut
 }
 
 const sendvn = (teks) => {
-XeonBotInc.sendMessage(from, { audio: teks, mimetype: 'audio/mp4',}, { quoted: m })
+XeonBotInc.sendMessage(from, { audio: teks, mimetype: 'audio/mp4',  }, { quoted: m })
 }
 
 //autoreply
 for (let BhosdikaXeon of VoiceNoteXeon) {
 if (budy === BhosdikaXeon) {
-let audiobuffy = fs.readFileSync(`./XeonMedia/audio/panda.mp3`)
-XeonBotInc.sendMessage(m.chat, { audio: audiobuffy, mimetype: 'audio/mp4',}, { quoted: m })     
+let audiobuffy = fs.readFileSync(`./XeonMedia/audio/${BhosdikaXeon}.mp3`)
+XeonBotInc.sendMessage(m.chat, { audio: audiobuffy, mimetype: 'audio/mp4',  }, { quoted: m })     
 }
 }
 for (let BhosdikaXeon of StickerXeon){
@@ -1484,39 +1484,81 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
-case 'list': case 'menu': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed()
             let latensie = speed() - timestampe
             xeonezy = `
-━━━━━━━━━━━━━━━━━━━
-🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼
-━━━━━━━━━━━━━━━━━━━
-${xeonytimewisher} 
----------------------
+┏『 𝗖𝗬𝗕𝗘𝗥-𝗣𝗔𝗡𝗗𝗔_𝗠𝗗_*𝗩2* 』━⦂⦁
+┗━━━━━━━━━━━━━━━━━━━━━━⦂⦁
+⦁ *හලො කොහොමද ඉතින්* 👋
  ${pushname} 
-━━━━━━━━━━━━━━━━━━
-*SPEED* : ${latensie.toFixed(4)} 
-*RUNTIME* : ${runtime(process.uptime())}
-*BOT_NAME* : ${global.botname}
-*OWNER NO*: ${ownernumber}
-━━━━━━━━━━━━━━━━━━
-*NAME* : ${pushname}
-┃============================
-*NUMBER* : @${me.split('@')[0]}
-━━━━━━━━━━━━━━━━━━
+
+✘ 𝗔.𝗧 𝗡𝗢𝗪= ${xeonytimewisher} 
+
+✘『 🐼 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠 🐼 』✘
+┏━━━━━━━━━━━━━━━━━━━⦂⦁      
+┃ *⚡SPEED* : ${latensie.toFixed(4)} 
+┃ *📟RUNTIME* : ${runtime(process.uptime())}
+┃ *💫BOT_NAME* : ${global.botname}
+┃ *🐼OWNER NO*: ${ownernumber}
+┃ *⚙️MODE* : ${XeonBotInc.public ? 'Public' : `Self`}
+┗━━━━━━━━━━━━━━━━━━━⦂⦁
+
+┏『 𝗕𝗢𝗧_𝗨𝗦𝗘𝗥_𝗜𝗡𝗙𝗢𝗥𝗠  』━⦂⦁
+┃ *🪄NAME* : ${pushname}
+┃
+┃ *🧬NUMBER* : @${me.split('@')[0]}
+┃  *🦋Have a Nice Day....*
+┗━━━━━━━━━━━━━━━━━━━⦂⦁
+
+⦁⦂━━━━『 *NOTICE* 』━━━━⦂⦁
+📌  .allmenu *ලෙස ටයිප් කර බොට්ගෙ සියලුම විදාන ලබා ගත හැකිය.*
+
 ┏ 『🐼𝗖𝗢𝗠𝗠𝗔𝗡𝗗_𝗟𝗜𝗦𝗧🐼』
-✘    1-*𝘢𝘭𝘭𝘮𝘦𝘯𝘶*
-✘    2-*𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘮𝘦𝘯𝘶*
-✘    3-*𝘧𝘶𝘯𝘮𝘦𝘯𝘶*
-✘    4-*𝘨𝘳𝘰𝘶𝘱𝘮𝘦𝘯𝘶*
-✘    5-*𝘰𝘸𝘯𝘦𝘳𝘮𝘦𝘯𝘶*
-✘    6-*𝘣𝘶𝘨𝘮𝘦𝘯𝘶*
-✘    7-*𝘰𝘵𝘩𝘦𝘳𝘮𝘦𝘯𝘶*
-━━━━━━━━━━━━━━━━━━
-🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼
-━━━━━━━━━━━━━━━━━━`
+✘  *𝘢𝘭𝘭𝘮𝘦𝘯𝘶*
+✘  *𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘮𝘦𝘯𝘶*
+✘  *𝘧𝘶𝘯𝘮𝘦𝘯𝘶*
+✘  *𝘨𝘳𝘰𝘶𝘱𝘮𝘦𝘯𝘶*
+✘  *𝘰𝘸𝘯𝘦𝘳𝘮𝘦𝘯𝘶*
+✘  *𝘣𝘶𝘨𝘮𝘦𝘯𝘶*
+✘  *𝘰𝘵𝘩𝘦𝘳𝘮𝘦𝘯𝘶*
+┏━━━━━━━━━━━━━━━━━━━━━⦂⦁
+┃『𝗖𝗬𝗕𝗘𝗥-𝗕𝗢𝗧_𝗗𝗘𝗠𝗢𝗡𝗦_𝗧𝗘𝗔𝗠』
+┗━━━━━━━━━━━━━━━━━━━━━⦂⦁
+
+°•°___✘『 𝗕𝗢𝗧-𝗠𝗘𝗡𝗨 』✘___°•°
+╭━━━━━━━━━━━━━━━━━━━━━━⦁
+┃🐼 *𝘊𝘠𝘉𝘌𝘙_𝘗𝘈𝘕𝘋𝘈_𝘔𝘋* 🐼
+╰━━━━━━━━━━━━━━━━━━━━━━⦁
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.allmenu*
+💫𝗗.𝗖.𝗧 ➠ *සියලුම විදාන දැන ගැනිම සදහා.* 
+🐼𝗨𝗦𝗘 ➠ .allmenu
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗  ➠ *.downloadmenu*
+💫𝗗.𝗖.𝗧 ➠ *සින්දු විඩියො ඩවුන්ලොඩ් කර ගැනිම සදහා..*
+🐼𝗨𝗦𝗘 ➠ .downloadmenu 
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.funmenu*
+💫𝗗.𝗖.𝗧 ➠ *අවශ්ය නම් පමනි🤭*
+🐼𝗨𝗦𝗘 ➠ .funmenu
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.groupmenu*
+💫𝗗.𝗖.𝗧 ➠ *ගෘප් සදහා වෙන් උන විදාන ලයිස්තුව.*
+🐼𝗨𝗦𝗘 ➠.groupmenu 
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ .ownermenu
+💫𝗗.𝗖.𝗧 ➠ * ඔනවර්ගෙ විදාන සදහා.*
+🐼𝗨𝗦𝗘 ➠.ownermenu 94767233346
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *.bugmenu*
+💫𝗗.𝗖.𝗧 ➠ *spam හා සමාන විදානයකි*
+🐼𝗨𝗦𝗘 ➠ .bugmenu <tag user>
+
+🗣️𝗖𝗢𝗠𝗠𝗔𝗡𝗗 ➠ *othermenu*
+💫𝗗.𝗖.𝗧 ➠ *බොට් තුල ඇති වෙනත් විදාන දැන ගැනිම සදහා..*
+🐼𝗨𝗦𝗘 ➠ .othermenu`
             let ments = [ownernya, me, mark]        
            XeonBotInc.sendMessage(from, { 
 text: xeonezy,
@@ -1538,7 +1580,7 @@ mentionedJid:[sender],
 }, { quoted: m })
            }
            break
-case '1': {
+case 'allmenu': {
 var unicorn = await getBuffer(picak+'All Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${allmenu(prefix, hituet)}`,
@@ -1559,7 +1601,7 @@ mentionedJid:[sender],
 })
 }
 break
-case '5': {
+case 'ownermenu': {
 var unicorn = await getBuffer(picak+'Owner Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${ownermenu(prefix)}`,
@@ -1580,7 +1622,7 @@ mentionedJid:[sender],
 })
 }
 break
-case '7': {
+case 'othermenu': {
 	var unicorn = await getBuffer(picak+'Other Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${othermenu(prefix)}`,
@@ -1601,7 +1643,7 @@ mentionedJid:[sender],
 })
 }
 break
-case '2': {
+case 'downloadmenu': {
 var unicorn = await getBuffer(picak+'Download Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${downloadmenu(prefix)}`,
@@ -1622,7 +1664,7 @@ mentionedJid:[sender],
 })
 }
 break
-case '4': {
+case 'groupmenu': {
 var unicorn = await getBuffer(picak+'Group Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${groupmenu(prefix)}`,
@@ -1643,7 +1685,7 @@ mentionedJid:[sender],
 })
 }
 break
-case '3': {
+case 'funmenu': {
 var unicorn = await getBuffer(picak+'Fun Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${funmenu(prefix)}`,
@@ -1895,7 +1937,7 @@ mentionedJid:[sender],
 })
 }
 break
-case '6': {
+case 'bugmenu': {
 var unicorn = await getBuffer(picak+'Bug Menu')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${bugmenu(prefix)}`,
@@ -2078,7 +2120,7 @@ case 'sound159':
 case 'sound160':
 case 'sound161':
 XeonBotInc_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
-await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4',}, { quoted: m })     
+await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4',  }, { quoted: m })     
 break
 case 'friend':
 case 'searchfriend':{
@@ -2478,12 +2520,7 @@ break
                 respon = `
 *Response Speed* ${latensi.toFixed(4)} _*Second*_ \n ${oldd - neww} _*miliseconds*_\n\n*Runtime* : ${runtime(process.uptime())}
 
-https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD-V.01
-
-
-✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳
-🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼
-✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳✳
+🐼  *𝘊𝘠𝘉𝘌𝘙-𝘗𝘈𝘕𝘋𝘈-𝘔𝘋-𝘝1*
 *RAM* : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
 _*NodeJS Memory Usaage*_
@@ -3341,7 +3378,7 @@ const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4',
+    mimetype: 'audio/mp4', ,
     contextInfo:{
         externalAdReply:{
             title:anup3k.title,
@@ -3362,7 +3399,7 @@ if (args.length < 1 || !isUrl(text) || !xeonaudp3.isYTUrl(text)) return replygcx
 const audio=await xeonaudp3.mp3(text)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(audio.path),
-    mimetype: 'audio/mp4',
+    mimetype: 'audio/mp4', ,
     contextInfo:{
         externalAdReply:{
             title:audio.meta.title,
@@ -5857,7 +5894,7 @@ exec(`ffmpeg -i ${media} -filter:a volume=${args[0]} ${rname}`, (err, stderr, st
 fs.unlinkSync(media)
 if (err) return replygcxeon('Error!')
 jadie = fs.readFileSync(rname)
-XeonBotInc.sendMessage(from, {audio:jadie, mimetype: 'audio/mp4',}, {quoted: m})
+XeonBotInc.sendMessage(from, {audio:jadie, mimetype: 'audio/mp4', }, {quoted: m})
 fs.unlinkSync(rname)
 })
 } else if (isQuotedVideo) {
@@ -5887,7 +5924,7 @@ break
   }
  break
 case 'git': case 'gitclone':
-if (!args[0]) return replygcxeon(`🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼\n${prefix}${command} https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD-V.01`)
+if (!args[0]) return replygcxeon(`Where is the link?\nExample :\n${prefix}${command} https://github.com/DGXeon/XeonMedia`)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return replygcxeon(`Link invalid!!`)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = args[0].match(regex1) || []
