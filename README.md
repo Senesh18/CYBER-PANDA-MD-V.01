@@ -1,4 +1,5 @@
-![IMG-20231101-WA0035](https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD-V.01/assets/133668461/64132d97-d0ec-4267-8c63-a1bafa5366fa)
+![IMG-20231206-WA0042](https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD-V.01/assets/133668461/66fa0134-9360-4691-8799-5912d9c330df)
+
 ___________
 
 # CYBER-PANDA-MD-V.01
@@ -13,7 +14,7 @@ ___________
 
 
 ## `Scan QR Code For Session`
-[![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@ffm08985/or?v=1)
+[![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@slsachith93/CYBER-PANDA-MD-V3?v=1)
 
 
 
