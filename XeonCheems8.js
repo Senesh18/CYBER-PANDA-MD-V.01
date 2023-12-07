@@ -1484,32 +1484,41 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'list': case 'menu': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed()
             let latensie = speed() - timestampe
             xeonezy = `
-┏━━━━━━━━━━━━━━━━━━━━━
-┃*Hi* Broo
+┍━━━━━━━━━━━━━━━━━━ •
+┃ 💞 𝗡𝗢𝗪= ${xeonytimewisher} 
+┗━━━━━━━━━━━━━━━━━━ •
+┏━━━━━━━━━━━━━━━━━━ •
+┃┃*Hi* Broo
 ┃*${pushname}*
-┃━━━━━━━━━━━━━━━━━━━━━
-┃𝗔.𝗧 𝗡𝗢𝗪= ${xeonytimewisher} 
-┏━━━━━━━━━━━━━━━━━━━━
-┃ *SPEED* : ${latensie.toFixed(4)} 
-┃ *RUNTIME* : ${runtime(process.uptime())}
-┃ *BOT_NAME* : ${global.botname}
-┃ *OWNER NO*: ${ownernumber}
-┗━━━━━━━━━━━━━━━━━━━⦂⦁
-┃𝗕𝗢𝗧_𝗨𝗦𝗘𝗥_𝗜𝗡𝗙𝗢𝗥𝗠
-┏━━━━━━━━━━━━━━━━━━━━━
-┃ *NAME* : ${pushname}
-┃━━━━━━━━━━━━━━━━━━━━━
-┃ *NUMBER* : @${me.split('@')[0]}
-┃  *Have a Nice Day....*
-┗━━━━━━━━━━━━━━━━━━━
-『𝗖𝗢𝗠𝗠𝗔𝗡𝗗_𝗟𝗜𝗦𝗧』
-┃
+┗━━━━━━━━━━━━━━━━━━ •
+     *_🧸Hey...I'm online now🧸_*
+┏━━━━━━━━━━━━━━━━━━ •
+┃  💞 *BOT_NAME* : ${global.botname}
+┃  🎭 *Bot-Owners:* SACHITH & SENESH
+┗━━━━━━━━━━━━━━━━━━ •
+┏━━━━━━━━━━━━━━━━━━ •
+┃ 💞*SPEED* : ${latensie.toFixed(4)} 
+┃ 🧿*RUNTIME* : ${runtime(process.uptime())}
+┃ 🎯*BOT_NAME* : ${global.botname}
+┃ ✨*OWNER NO*: ${ownernumber}
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃    *NUMBER* : @${me.split('@')[0]}
+┃ 🦋 *Have a Nice Day....* 🦋
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃   *_Developed By Cyber Sachiya_*
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃   *_💞THANK SENESH💞_*
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
 ┃*𝘢𝘭𝘭𝘮𝘦𝘯𝘶*
 ┃*𝘥𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘮𝘦𝘯𝘶*
 ┃*𝘧𝘶𝘯𝘮𝘦𝘯𝘶*
@@ -1517,9 +1526,10 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 ┃*𝘰𝘸𝘯𝘦𝘳𝘮𝘦𝘯𝘶*
 ┃*𝘣𝘶𝘨𝘮𝘦𝘯𝘶*
 ┃*𝘰𝘵𝘩𝘦𝘳𝘮𝘦𝘯𝘶*
-┏━━━━━━━━━━━━━━━━━━━━━⦂⦁
-┃『𝗖𝗬𝗕𝗘𝗥-𝗕𝗢𝗧_𝗗𝗘𝗠𝗢𝗡𝗦_𝗧𝗘𝗔𝗠』
-┗━━━━━━━━━━━━━━━━━━━━━⦂⦁`
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃🐼 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🐼
+┗━━━━━━━━━━━━━━━━━━ •`
             let ments = [ownernya, me, mark]        
            XeonBotInc.sendMessage(from, { 
 text: xeonezy,
@@ -3339,7 +3349,7 @@ const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4',
     contextInfo:{
         externalAdReply:{
             title:anup3k.title,
